@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Login = () => {
@@ -10,6 +11,7 @@ const Login = () => {
     }
     return (
         <div className="min-h-screen bg-base-200">
+            <h1 className="text-5xl font-bold text-center mb-10">Login now!</h1>
             <div className="card w-3/12 mx-auto shadow-2xl bg-base-100 ">
                 <form onSubmit={handleLogin} className="card-body">
                     <div className="form-control">
@@ -30,6 +32,7 @@ const Login = () => {
                     <div className="form-control mt-6">
                         <button className="btn btn-secondary">Login</button>
                     </div>
+                    <p><small>New to Authentic plus please <Link className="text-blue-600 underline" to="/register">Register</Link></small></p>
                 </form>
             </div>
         </div>
