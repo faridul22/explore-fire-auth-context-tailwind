@@ -18,7 +18,9 @@ const Header = () => {
                 <h4 className="btn btn-ghost text-xl">daisyUI</h4>
                 <div className="mx-auto">
                     <Link className="text-lg mx-2 font-semibold" to="/">Home</Link>
-                    <Link className="text-lg mx-2 font-semibold" to="/profile">Profile</Link>
+                    {
+                        user && <Link className="text-lg mx-2 font-semibold" to="/profile">Profile</Link>
+                    }
                     <Link className="text-lg mx-2 font-semibold" to="/orders">Orders</Link>
                     <Link className="text-lg mx-2 font-semibold" to="/login">LogIn</Link>
                     <Link className="text-lg mx-2 font-semibold" to="/register">Register</Link>
